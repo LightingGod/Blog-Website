@@ -1,0 +1,18 @@
+<%- include('header-1'); -%>
+<link rel="stylesheet" href="/CSS/index.css">
+<%- include('navbar'); -%>
+<div id="home">
+    <h1>Home</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui suscipit quo voluptate voluptatum, quibusdam facilis? Eos voluptatum reiciendis, ipsum totam molestias nesciunt libero eveniet sint dignissimos vero voluptatibus nemo magnam, nihil ullam error et explicabo. Exercitationem laudantium, suscipit fugit dolores tempora omnis pariatur asperiores fugiat saepe recusandae repellendus voluptatibus repellat numquam sit velit perferendis tempore labore. Tempora tempore veritatis nobis ipsum atque quam ad neque consectetur, omnis aliquam quas ab harum nostrum voluptatum voluptatibus repellendus maxime pariatur cum at? Quos voluptate est error, cupiditate nemo natus molestias, atque eveniet ipsum sed porro tempore cumque. Fugiat laudantium voluptas corporis, quae assumenda impedit.</p>
+
+
+    <% for(let i=0;i<blogs.length;i++){ %>
+        <div id="blogs">
+            <h2><%= blogs[i].title%></h2>
+            <span><%= blogs[i].descrip%></span>
+            <span><a href="/posts/<%=blogs[i].title%> ">Read More</a></span>
+        </div>
+    <%}%>
+</div>
+
+<%- include('footer'); -%>

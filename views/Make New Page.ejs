@@ -1,0 +1,16 @@
+<%- include('header-1'); -%>
+<link rel="stylesheet" href="/CSS/MakeNewPage.css">
+<%- include('navbar'); -%>
+<div id="newform">
+    <h1>Make New Post</h1>
+    <form action="/makenewpost" method="post">
+        <div class="input-group mb-3">
+            <input type="text" class="form-control" placeholder="Add Title" name="heading">
+        </div>
+        <div class="input-group">
+            <textarea class="form-control myheight" placeholder="Write Your Blog" name="data"></textarea>
+        </div>
+        <button type="submit" class="btn btn-secondary">Submit</button>
+    </form>
+</div>
+<%- include('footer'); -%>
